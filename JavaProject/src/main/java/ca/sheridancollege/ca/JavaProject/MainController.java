@@ -17,9 +17,11 @@ public class MainController {
 	}
 
 	@ResponseBody
-	@GetMapping("/")
+	@GetMapping({"/", "/hello"})
 	public String home() {
 
+		
+		
 		return "home";
 	}
 
