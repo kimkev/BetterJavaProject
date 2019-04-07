@@ -9,23 +9,19 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class MainController {
 
 	private PersonDAO personDAO;
-	
 
 	@Autowired
 	public MainController(PersonDAO personDAO) {
 		super();
 //		dao.populate();
 	}
-	
+
 	@ResponseBody
 	@GetMapping("/")
 	public String home() {
 
-
-		
 		return "home";
 	}
-
 
 //	@RequestMapping(value = { "/personList" }, method = RequestMethod.GET)
 //	public String viewPersonList(Model model) {
